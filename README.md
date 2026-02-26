@@ -1,6 +1,8 @@
-# Math Adventure Game (Python)
+# Math Adventure Game (Pythonista `ui`)
 
-A kid-friendly Python game for ages around 6 that practices:
+A kid-friendly game for ages around 6, designed for **Pythonista on iPad/iPhone** using the built-in `ui` module.
+
+It practices:
 
 - Addition
 - Subtraction
@@ -10,11 +12,10 @@ A kid-friendly Python game for ages around 6 that practices:
 
 All questions stay in the 0-100 range with **5 levels of difficulty**.
 
-## Run
+## Run (Pythonista)
 
-```bash
-python3 math_game.py
-```
+1. Open `math_game.py` in Pythonista.
+2. Tap **Run**.
 
 ## Levels
 
