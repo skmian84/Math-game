@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game">
+      <h1>🌟 Math Adventure 🌟</h1>
+      <p class="subtitle">Practice addition and subtraction!</p>
+
+      <section class="stats" aria-label="Game progress">
+        <p>Score: <strong id="score">0</strong></p>
+        <p>Streak: <strong id="streak">0</strong> 🔥</p>
+        <p>Level: <strong id="level">1</strong></p>
+      </section>
+
+      <section class="problem-card" aria-live="polite">
+        <p class="prompt">What is...</p>
+        <p id="problem" class="problem">2 + 2</p>
+      </section>
+
+      <form id="answer-form" autocomplete="off">
+        <label for="answer" class="sr-only">Type your answer</label>
+        <input
+          id="answer"
+          name="answer"
+          type="number"
+          inputmode="numeric"
+          min="0"
+          placeholder="Your answer"
+          required
+        />
+        <button type="submit">Check Answer</button>
+      </form>
+
+      <p id="message" class="message" aria-live="polite"></p>
+
+      <div class="actions">
+        <button id="new-problem" type="button">New Problem</button>
+        <button id="reset-game" type="button">Reset Game</button>
+      </div>
+
+      <section class="tips">
+        <h2>How to Play</h2>
+        <ul>
+          <li>Answer each math question.</li>
+          <li>Get 3 right in a row to level up!</li>
+          <li>Higher levels use bigger numbers.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
